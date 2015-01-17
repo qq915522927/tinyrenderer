@@ -103,7 +103,7 @@ void line3(int x0, int y0, int x1, int y1, TGAImage& img, TGAColor color){
 	}
 }
 
-int main(int argc, char** argv) {
+int test_line() {
 	TGAImage image(500, 500, TGAImage::RGB);
 	line3(200, 200, 300, 300, image, red);
 	// steep
@@ -133,4 +133,5 @@ int main(int argc, char** argv) {
 	image.write_tga_file("output.tga");
 	return 0;
 }
+
 
